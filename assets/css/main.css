@@ -238,4 +238,24 @@ table {
 	border-spacing: 0;
 }
 
+body {
+color: #19193E;
+letter-spacing: 0;
+}
 
+
+.main-header {
+	max-width: 840px;
+	margin: 30px auto 60px;	
+}
+
+.wrapper {
+	max-width: 840px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.site-footer {
+	max-width: 840px;
+	margin: 30px auto;
+}

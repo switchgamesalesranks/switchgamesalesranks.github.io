@@ -22,3 +22,23 @@ logo: true
 </header>
 
 
+<div class="wrapper">
+	
+	
+		
+		{% for games_item in site.data.games %}
+		
+			<div class="cover">{{ games_item.cover }}</div>
+			<div class="name">{{ games_item.name }}</div>
+			<div class="percent">{{ games_item.percent }}</div>
+			
+			<div class="metascore">Metascore: {{ games_item.metascore }}</div>
+			<div class="userscore">User score: {{ games_item.userscore }}</div>
+			
+			<div class="price">{{ games_item.price }}</div>
+			<div class="oldprice">{{ games_item.oldprice }}</div>
+			<div class="link">{{ games_item.link }}</div>
+		
+		{% endfor %}
+	
+</div>
