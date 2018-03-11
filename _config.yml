@@ -1,0 +1,35 @@
+name: Busy breakfast
+description: Five minute breakfasts every week
+meta_description: "Receive fresh easy to cook breakfast ideas weekly."
+
+markdown: kramdown
+highlighter: rouge
+github: [metadata]
+logo: true 
+paginate_path: "page:num"
+timezone: CZ
+domain_name: 'https://busybreakfast.github.io'
+baseurl:
+plugins:
+  - jekyll-feed
+
+paginate: 7
+collections: 
+ breakfasts:
+  output: true
+
+author:  'Yuriy Shiryaev'
+twitter: 'yuriysteam'
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
