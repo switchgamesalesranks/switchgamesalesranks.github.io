@@ -1,6 +1,6 @@
-name: Busy breakfast
-description: Five minute breakfasts every week
-meta_description: "Receive fresh easy to cook breakfast ideas weekly."
+name: Switch game deals with scores
+description: Find out is it worth buying the game or not
+meta_description: "Find out is it worth buying the game or not"
 
 markdown: kramdown
 highlighter: rouge
@@ -8,7 +8,7 @@ github: [metadata]
 logo: true 
 paginate_path: "page:num"
 timezone: CZ
-domain_name: 'https://busybreakfast.github.io'
+domain_name: ''
 baseurl:
 plugins:
   - jekyll-feed

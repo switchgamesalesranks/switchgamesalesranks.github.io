@@ -255,6 +255,115 @@ letter-spacing: 0;
 	padding-bottom: 30px;
 }
 
+.game_item {
+	display: flex;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.cover {
+	width: 110px;
+	height: 105px;
+	background: #dedede;
+	border-radius: 10px;
+	margin-right: 20px;
+	background-size: cover;
+}
+
+.game_info {
+	width: 70%;
+	display: block;
+}
+
+.game_scores {
+	display: flex;
+}
+
+.name {
+font-family: Roboto-Bold;
+font-size: 24px;
+color: #19193E;
+letter-spacing: 0;
+}
+
+.percent {
+padding: 5px 18px;
+background: #E41919;
+border-radius: 7px;
+color: #fff;
+width: 72px;
+font-family: Roboto-Bold;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+	margin: 10px 0;
+}
+
+.score_info {
+font-family: Roboto-Regular;
+font-size: 16px;
+color: #939393;
+letter-spacing: 0;
+display: flex;
+margin: 10px 20px 0 0;
+}
+
+.score {
+font-family: Roboto-Bold;
+font-size: 18px;
+color: #242424;
+letter-spacing: 0;
+margin-left: 10px;
+}
+
+.price_info {
+	text-align: center;
+}
+
+.price {
+font-family: Roboto-Regular;
+font-size: 32px;
+color: #19193E;
+letter-spacing: 0;}
+
+.oldprice {
+font-family: Roboto-Regular;
+font-size: 18px;
+color: #F27000;
+letter-spacing: 0;
+text-decoration: line-through;
+	margin-bottom: 20px;
+}
+
+a.link {
+margin-top: 20px;
+	text-decoration: none;
+padding: 5px 15px;
+border: 1px solid #19193E;
+border-radius: 7px;
+font-family: Roboto-Regular;
+font-size: 16px;
+color: #19193E;
+text-transform: uppercase;
+letter-spacing: 0;
+background: #fff;
+}
+
+a.link:hover {
+padding: 5px 15px;
+border: 1px solid #19193E;
+border-radius: 7px;
+	background: #19193E;
+font-family: Roboto-Regular;
+font-size: 16px;
+	color: #fff;
+
+letter-spacing: 0;
+}
+
+
 .site-footer {
 	max-width: 840px;
 	margin: 30px auto;

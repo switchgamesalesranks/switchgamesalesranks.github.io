@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Five minute breakfasts every week
+title: Switch game deals with scores
 cover: false
 logo: true
 
@@ -11,7 +11,7 @@ logo: true
 	
 
 	
-	<a class="logo" href="{{ site.url }}">Switch game deals with scores</a>
+	Today: 24 games are on sale
 		
 
 		
@@ -25,20 +25,30 @@ logo: true
 <div class="wrapper">
 	
 	
+	
+	{% for games_item in site.data.games %}
+	
+	<div class="game_item">
 		
-		{% for games_item in site.data.games %}
 		
-			<div class="cover">{{ games_item.cover }}</div>
+			<div class="cover" style="background-image: url({{ games_item.cover }})"></div>
+		<div class="game_info">
 			<div class="name">{{ games_item.name }}</div>
 			<div class="percent">{{ games_item.percent }}</div>
-			
-			<div class="metascore">Metascore: {{ games_item.metascore }}</div>
-			<div class="userscore">User score: {{ games_item.userscore }}</div>
-			
-			<div class="price">{{ games_item.price }}</div>
-			<div class="oldprice">{{ games_item.oldprice }}</div>
-			<div class="link">{{ games_item.link }}</div>
+		<div class="game_scores">	
+			<div class="score_info">Metacritics score: <div class="score">{{ games_item.metascore }}</div></div>
+			<div class="score_info">User score: <div class="score">{{ games_item.userscore }}</div></div>
+		</div>
 		
-		{% endfor %}
+		</div>
+		
+		<div class="price_info">
+			<div class="price">$ {{ games_item.price }}</div>
+			<div class="oldprice">$ {{ games_item.oldprice }}</div>
+			<a href="{{ games_item.link }}" class="link" target="_blank">In store</a>
+		</div>
+		
+	</div>
 	
+	{% endfor %}
 </div>
